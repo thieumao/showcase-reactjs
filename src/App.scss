@@ -1,3 +1,23 @@
+$gray-blur-color: #F7F7F7;
+$pink-color: #FF3366;
+
+.menu-left { 
+  float: left;
+  margin-top:  56px;
+  margin-right: 56px;
+}
+ul { 
+  list-style: none;
+}
+li {
+  height: 50px;
+  min-width: 80px;
+  padding: 10px 10px;
+}
+b:hover {
+  color: $pink-color;
+}
+
 .App {
   text-align: center;
 }
