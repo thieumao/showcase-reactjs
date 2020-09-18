@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import projectAPI from '../../api/projectAPI'
 
 const CaseStudyList = () => {
+
+  useEffect(() => {
+    console.log('Thieu Mao');
+    try {
+      const response = projectAPI.getAll();
+      console.log(response);
+    } catch (error) {
+
+    }
+  }, []);
+
   return (
     <div id="container">
       <h1>Case Study List</h1>
