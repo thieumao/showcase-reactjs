@@ -6,12 +6,13 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 import Topic from "../Topic";
+import "./styles.scss";
 
 const Topics = () => {
   let match = useRouteMatch();
 
   return (
-    <div>
+    <div id="container">
       <h2>Topics</h2>
 
       <ul>

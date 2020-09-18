@@ -2,7 +2,7 @@ import React from 'react';
 
 const CaseStudyList = () => {
   return (
-    <div>
+    <div id="container">
       <h1>Case Study List</h1>
     </div>
   );

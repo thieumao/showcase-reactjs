@@ -1,58 +1,49 @@
 $gray-blur-color: #F7F7F7;
 $pink-color: #FF3366;
+$main-color: #3A5997;
+$second-color: #EBEDF0;
+$text-color: #333;
 
-.menu-left { 
-  float: left;
-  margin-top:  56px;
-  margin-right: 56px;
-}
-ul { 
-  list-style: none;
-}
-li {
-  height: 50px;
-  min-width: 80px;
-  padding: 10px 10px;
-}
-b:hover {
-  color: $pink-color;
+body {
+  font-family: sans-serif;
+  color: $text-color;
 }
 
-.App {
+#menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background: $main-color;
+  text-align: left;
+}
+
+#menu ul li {
+  color: $second-color;
+  display: inline-table;
+  width: 128px;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#menu ul li a {
+  color: $second-color;
+  text-decoration: none;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#menu ul li a:hover {
+  background: $second-color;
+  color: $text-color;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#menu ul li > .sub-menu {
+  display: none;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#menu ul li:hover > .sub-menu {
+  display: block;
 }
